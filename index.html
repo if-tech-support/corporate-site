@@ -1,148 +1,132 @@
+<!--
+  TODO class命名を変更する -> OK
+  TODO 不要な要素を削除する -> OK
+  TODO Footer 作る ->
+ -->
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" container="IE=edge" />
+    <meta name="viewport" container="width=device-width, initial-scale=1.0" />
     <title>株式会社 企業名</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="body">
-    <header class="head">
-      <div class="head__inner">
+  <body>
+
+    <header>
         <div>
-          <h1 class="head__logo">企業名</h1>
+          <h1 class="header-logo">企業名</h1>
         </div>
-        <nav class="nav">
-          <ul class="nav__menu">
-            <li class="nav__item">
-              <a class="nav__link nav__link--active" href="#top">
-                TOP
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#company-information">
-                企業情報
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#business-details">
+        <nav>
+          <ul>
+            <li>
+              <a href="#service">
                 事業内容
               </a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#employment">
+            <li>
+              <a href="#employment">
                 採用情報
               </a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#contact">
-                お問い合わせ
+            <li>
+              <a href="#company-information">
+                企業情報
               </a>
             </li>
           </ul>
         </nav>
-      </div>
     </header>
+
     <main>
-      <section id="top" class="top">
-        <h1 class="top__title">昨日まで世界になかったものを。</h1>
-        <div class="top__img">
-          <img src="img/buildings-690364_1920.jpg" alt="" />
+      <section class="first-view">
+        <div class="top-title">
+          <h1>昨日まで世界になかったものを。</h1>
+        </div>
+        <div class="top-img">
+          <img src="img/buildings-690364_1920.jpg">
         </div>
       </section>
-      <section id="company-information" class="company-information">
-        <p class="company-information__title">会社概要</p>
-        <dl>
-          <dt>会社名</dt>
-          <dd>株式会社 企業名</dd>
-          <dt>設立</dt>
-          <dd>2003年07月11日</dd>
-          <dt>代表取締役</dt>
-          <dd>○○ ○○</dd>
-          <dt>従業員数</dt>
-          <dd>2,330名</dd>
-          <dt>資本金</dt>
-          <dd>5000万円</dd>
-          <dt>売上高</dt>
-          <dd>355.6億円</dd>
-          <dt>電話番号</dt>
-          <dd>000-0000-0000</dd>
-          <dt>FAX</dt>
-          <dd>00-0000-0000</dd>
-          <dt>所在地</dt>
-          <dd>〒000-0000 ○○市○○区○○0番地</dd>
-        </dl>
-      </section>
-      <section id="business-details" class="business-details">
-        <h1 class="business-details__title">事業内容</h1>
-        <div class="business-details__content">
-          <div class="business-details__img">
-            <img src="img/work-731198_1920.jpg" alt="" />
+
+      <section id="service" class="service">
+        <div class="section-title">
+          <h1>事業内容</h1>
+        </div>
+        <div class="service-container">
+          <div class="service-img">
+            <img src="img/work-731198_1920.jpg">
           </div>
-          <div class="business-details__contents">
-            <h2 class="business-details__sub-title">システム開発</h2>
-            <p class="business-details__text">
+          <div class="service-contents">
+            <h2 class="service-title">システム開発</h2>
+            <p class="service-text">
               歯止めのかからない、地球温暖化による気象リスクの深刻化。
               高品質な米や野菜を安定的に365日供給可能にする。栽培技術や連携システムの構築が当社の強み。
               安心・安全はもちろん、環境にも配慮した農業に取り組んでいます。
             </p>
-            <a class="business-details__link" href="#">詳しく見る</a>
+            <a  href="#">詳しく見る</a>
           </div>
         </div>
-        <div class="business-details__content">
-          <div class="business-details__contents">
-            <h2 class="business-details__sub-title">ソフトウェア開発</h2>
-            <p class="business-details__text">
+
+        <div class="service-container">
+          <div class="service-img">
+            <img src="img/digital-marketing-1725340_1920.jpg">
+          </div>
+          <div class="service-contents">
+            <h2 class="service-title">ソフトウェア開発</h2>
+            <p class="service-text">
               農業の収益化において課題となっている、物流や農機具のコスト削減。舞台ファームが持つ、全国の生産者、企業、マーケットのネットワークで、農業の課題を効率的に解決するサービスを展開しています。
             </p>
-            <a class="business-details__link" class="" href="#">詳しく見る</a>
-          </div>
-          <div class="business-details__img">
-            <img src="img/digital-marketing-1725340_1920.jpg" alt="" />
+            <a  class="" href="#">詳しく見る</a>
           </div>
         </div>
-        <div class="business-details__content">
-          <div class="business-details__img">
-            <img src="img/rentalservertowa201809.jpg" alt="" />
+
+        <div class="service-container">
+          <div class="service-img">
+            <img src="img/rentalservertowa201809.jpg">
           </div>
-          <div class="business-details__contents">
-            <h2 class="business-details__sub-title">インフラ基盤設計</h2>
-            <p class="business-details__text">
+          <div class="service-contents">
+            <h2 class="service-title">インフラ基盤設計</h2>
+            <p class="service-text">
               2021年から稼働をスタートする、次世代型野菜工場「BMS」。日本最大級となる施設では、定植から収穫まで完全オートメーションを目指し、舞台ファーム独自の「舞台ハイブリッド土耕栽培」を駆使する最新鋭栽培設備で、食卓に高品質な野菜を安定供給することを実現します。
             </p>
-            <a class="business-details__link" href="#">詳しく見る</a>
+            <a  href="#">詳しく見る</a>
           </div>
         </div>
-        <div class="business-details__content">
-          <div class="business-details__contents">
-            <h2 class="business-details__sub-title">システム運用・保守</h2>
-            <p class="business-details__text">
+
+        <div class="service-container">
+          <div class="service-img">
+            <img src="img/istockphoto-1271619512-170667a.jpg">
+          </div>
+          <div class="service-contents">
+            <h2 class="service-title">システム運用・保守</h2>
+            <p class="service-text">
               行政と共同で生産体制支援や人材の育成に取り組み、生産物の買取りまで行います。舞台ファームがこれまでに培ってきたノウハウやネットワークを活用し、地域農業の活性化を目指します。
             </p>
-            <a class="business-details__link" href="#">詳しく見る</a>
-          </div>
-          <div class="business-details__img">
-            <img src="img/istockphoto-1271619512-170667a.jpg" alt="" />
+            <a  href="#">詳しく見る</a>
           </div>
         </div>
       </section>
+
       <section id="employment" class="employment">
-        <h1 class="employment__title">採用情報</h1>
-        <p class="employment__text">
-          企業名は2016年10月から「新卒一括採用」を廃止し、新卒、既卒、第二新卒など経歴にかかわらず30歳以下の方であれば応募できる「ポテンシャル採用」として、通年採用を行っています。
-          これまでの「新卒採用」と就業経験を重視する「中途採用」では、第二新卒や既卒などの方に対して平等な採用選考機会を提供できないこと、また昨今、海外留学生や博士号取得者など就職活動の時期が多様化していることから、従来よりも柔軟な採用の枠組みが必要であると企業名は考えています。
+        <div class="section-title">
+          <h1>採用情報</h1>
+        </div>
+        <p class="employment-text">
+          　企業名は2016年10月から「新卒一括採用」を廃止し、新卒、既卒、第二新卒など経歴にかかわらず30歳以下の方であれば応募できる「ポテンシャル採用」として、通年採用を行っています。<br>
+          　これまでの「新卒採用」と就業経験を重視する「中途採用」では、第二新卒や既卒などの方に対して平等な採用選考機会を提供できないこと、また昨今、海外留学生や博士号取得者など就職活動の時期が多様化していることから、従来よりも柔軟な採用の枠組みが必要であると企業名は考えています。
         </p>
-        <table class="table" border="1" bordercolor="#31c5b9">
-          <thead class="table__head">
+        <table border="1" bordercolor="#31c5b9">
+          <thead>
             <tr>
               <th>名称</th>
               <th>ポテンシャル採用</th>
               <th>キャリア採用</th>
             </tr>
           </thead>
-          <tbody class="table__body">
+          <tbody>
             <tr>
               <th>雇用形態</th>
               <td>
@@ -180,34 +164,37 @@
           </tbody>
         </table>
       </section>
-      <section id="contact" class="contact">
-        <h1 class="contact__title">お問い合わせ</h1>
-        <form class="form">
-          <label class="form__label">
-            <span class="form__span">お名前 (必須)</span>
-            <input class="form__input" type="text" />
-          </label>
-          <label class="form__label">
-            <span class="form__span">ご所属先</span>
-            <input class="form__input" type="text" />
-          </label>
-          <label class="form__label">
-            <span class="form__span">メールアドレス (必須)</span>
-            <input class="form__input" type="text" />
-          </label>
-          <label class="form__label">
-            <span class="form__span">電話番号</span>
-            <input class="form__input" type="text" />
-          </label>
-          <label class="form__label">
-            <span class="form__span">お問い合わせ内容 (必須)</span>
-            <textarea class="form__textarea"></textarea>
-          </label>
-          <button class="form__button">送信</button>
-        </form>
+
+      <section id="company-information" class="company-information">
+        <div class="section-title">
+          <h1>会社概要</h1>
+        </div>
+        <dl>
+          <dt>会社名</dt>
+          <dd>株式会社 企業名</dd>
+          <dt>設立</dt>
+          <dd>2003年07月11日</dd>
+          <dt>代表取締役</dt>
+          <dd>○○ ○○</dd>
+          <dt>従業員数</dt>
+          <dd>2,330名</dd>
+          <dt>資本金</dt>
+          <dd>5000万円</dd>
+          <dt>売上高</dt>
+          <dd>355.6億円</dd>
+          <dt>電話番号</dt>
+          <dd>000-0000-0000</dd>
+          <dt>FAX</dt>
+          <dd>00-0000-0000</dd>
+          <dt>所在地</dt>
+          <dd>〒000-0000 ○○市○○区○○0番地</dd>
+        </dl>
       </section>
+
     </main>
 
-    <script src="js/main.js"></script>
+    <!-- Footer 作る -->
+    <footer></footer>
+
   </body>
 </html>

@@ -1,288 +1,229 @@
-.body {
+/*
+TODO Style 名を編集する -> OK
+TODO 必要のないスタイルを削除 -> OK
+TODO rem表記 → px に変更 -> OK
+TODO Style プロパティの順序を整理 → 大枠のスタイル → 余白や配置（重なり含む） → font のスタイル  -> OK
+TODO Footer の Style 追加 ->
+*/
+
+
+body {
   font-family: 'Vollkorn', serif;
-}
-
-.head {
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 10;
-}
-
-.head__inner {
-  display: flex;
-  margin: 20px 40px;
-  padding: 30px;
-  font-weight: bold;
-  background-color: #fff;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
-}
-
-.head__logo {
-  font-size: 3.6rem;
-  line-height: 42px;
-}
-
-.nav {
-  height: 42px;
-  font-size: 2rem;
-  margin-left: auto;
-  width: 60%;
-  color: #0000;
-}
-
-.nav__menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav__link {
-  display: block;
-  padding: 0 10px;
-  line-height: 42px;
-  color: #000000;
-}
-
-.nav__link:hover {
-  color: #31c5b9;
-}
-
-.nav__link--active {
-  color: #31c5b9;
-}
-
-.nav__icon {
-  margin-left: 10px;
-}
-
-.top {
   position: relative;
 }
 
-.top__title {
-  width: 100%;
-  position: absolute;
-  top: 40%;
-  font-size: 7rem;
+.section-title {
+  margin-bottom: 100px;
+
+  font-size: 50px;
   text-align: center;
-  color: black;
-  text-shadow: #fff 1px 1px 2px, #fff -1px 1px 2px, #fff 1px -1px 2px,
-    #fff -1px -1px 2px;
-  z-index: 2;
 }
 
-.top__img {
+/* Header Section */
+
+/* header */
+header {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px;
+  border-bottom: 3px solid #31c5b9;
+
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.header-logo {
+  font-size: 40px;
+}
+
+/* header navigation */
+nav {
+  height: 40px;
+  font-size: 20px;
+  color: #0000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-left: 80px;
+}
+
+nav a {
+  line-height: 40px;
+  color: #000000;
+}
+
+nav a:hover {
+  color: #31c5b9;
+}
+
+/* Section First-views */
+.first-view {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.top-title {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  width: 100%;
+
+  text-align: center;
+}
+
+.top-title h1 {
+  font-size: 60px;
+  color: black;
+  text-shadow:
+  #fff 1px 1px 2px,
+  #fff -1px 1px 2px,
+  #fff 1px -1px 2px,
+  #fff -1px -1px 2px;
+}
+
+.top-img {
   opacity: 0.9;
 }
 
-.company-information {
-  padding: 120px 40px;
-  background-color: rgb(252, 252, 252);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.company-information__title {
-  font-size: 5rem;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.company-information > dl {
-  width: 50%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1.8rem;
-  text-align: left;
-}
-
-.company-information > dl > dt {
-  width: 40%;
-  padding: 35px 0;
-}
-
-.company-information > dl > dd {
-  width: 60%;
-  padding: 35px 0;
-}
-
-.business-details {
-  padding: 120px 0;
-  background-color: rgb(252, 252, 252);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.business-details__title {
-  font-size: 5rem;
-  padding: 40px 0;
+/* Section service   */
+.service {
   margin-bottom: 100px;
-  text-align: center;
+  background-color: rgb(252, 252, 252);
+  border-bottom: 2px solid #31c5b9;
 }
 
-.business-details__content {
-  width: 70%;
-  margin: 0 auto 100px;
+.service-container {
   display: flex;
   align-items: center;
+  width: 80%;
+  margin: 0 auto 100px;
 }
 
-.business-details__img {
+.service-container:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.service-img {
   width: 50%;
   text-align: center;
 }
 
-.business-details__img > img {
+.service-img > img {
   height: 400px;
-  object-fit: cover;
-  box-sizing: border-box;
 }
 
-.business-details__contents {
+.service-contents {
   height: 400px;
   width: 50%;
   padding: 40px 0;
+
   text-align: center;
 }
 
-.business-details__sub-title {
-  color: #31c5b9;
-  font-size: 3rem;
+.service-title {
   padding-bottom: 40px;
+
+  font-size: 30px;
+  color: #31c5b9;
 }
 
-.business-details__text {
-  text-align: left;
-  font-size: 1.6rem;
-  line-height: 30px;
+.service-text {
   padding-bottom: 50px;
   margin: 0 30px;
+
+  text-align: left;
+  line-height: 30px;
+  font-size: 16px;
 }
 
-.business-details__link {
-  font-size: 1.8rem;
-  color: #31c5b9;
-  font-weight: bold;
-  margin: 0 auto;
-  width: 30%;
+.service-contents a {
   display: block;
+  width: 30%;
+  margin: 0 auto;
   padding: 20px 0;
   border: 1px solid #31c5b9;
+
+  font-size: 18px;
+  color: #31c5b9;
+  font-weight: bold;
 }
 
-.business-details__link:hover {
+.service-contents a:hover {
   color: #fff;
   background-color: #31c5b9;
 }
 
+/* Section Employment */
 .employment {
   padding: 120px 0;
-  background-color: rgb(252, 252, 252);
-  border-bottom: 1px solid #31c5b9;
+  border-bottom: 2px solid #31c5b9;
 }
 
-.employment__title {
-  font-size: 5rem;
-  padding: 40px 0;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.employment__text {
+.employment-text {
   width: 70%;
-  line-height: 40px;
-  font-size: 2.4rem;
   margin: 0 auto 100px;
+
+  line-height: 45px;
+  font-size: 25px;
 }
 
-.table {
+.employment table {
   width: 70%;
-  font-size: 2rem;
   margin: 0 auto;
+
+  font-size: 20px;
 }
 
-.table__head > tr > th {
-  text-align: center;
+.employment table > thead > tr > th {
   padding: 40px 0;
   background-color: rgb(164, 245, 238, 0.7);
+
+  text-align: center;
 }
 
-.table__head > tr > th:first-child {
+.employment table > thead > tr > th:first-child {
   width: 20%;
 }
 
-.table__body > tr > th {
+.employment table > tbody > tr > th {
   padding-left: 20px;
 }
 
-.table__body > tr > td {
+.employment table > tbody > tr > td {
   text-align: left;
   padding: 30px;
 }
 
-.contact {
-  padding: 120px 0;
+/* Section company-information  */
+.company-information {
+  padding: 120px 40px;
   background-color: rgb(252, 252, 252);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.contact__title {
-  font-size: 5rem;
-  padding: 40px 0;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
-.form {
+.company-information > dl {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  margin: 0 10% 0 35%;
+
+  font-size: 18px;
 }
 
-.form__label {
-  padding: 20px;
-  width: 70%;
-  display: flex;
-  margin: 0 auto;
-}
-
-.form__span {
-  font-size: 2.4rem;
+.company-information > dl > dt {
+  padding: 35px 0;
   width: 40%;
-  line-height: 60px;
 }
 
-.form__input {
-  display: inline-block;
-  font-size: 2.4rem;
+.company-information > dl > dd {
+  padding: 35px 0;
   width: 60%;
-  height: 60px;
-  outline: 0;
-  border: 1px solid #31c5b9;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.form__textarea {
-  font-size: 2.4rem;
-  width: 60%;
-  height: 120px;
-  line-height: 30px;
-  padding: 10px;
-  border-color: #31c5b9;
-}
-
-.form__button {
-  font-size: 2.4rem;
-  width: 20%;
-  padding: 15px 0;
-  margin: 50px auto 0;
-  color: #31c5b9;
-  border: 1px solid #31c5b9;
-  background-color: #fff;
-}
-
-.form__button:hover {
-  color: #fff;
-  background-color: #31c5b9;
 }
